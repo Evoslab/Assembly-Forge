@@ -14,14 +14,12 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 @Mod.EventBusSubscriber(modid = "assembly", bus = Mod.EventBusSubscriber.Bus.MOD)
 public class Assembly {
     public static final String MOD_ID = "assembly";
-    public static Assembly instance;
 
     public Assembly() {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         eventBus.addListener(this::doCommonStuff);
         eventBus.addListener(this::doClientStuff);
-        instance = this;
 
         AssemblyBlocks.BLOCKS.register(eventBus);
         AssemblyBlocks.ITEMS.register(eventBus);

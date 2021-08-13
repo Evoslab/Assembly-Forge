@@ -1,23 +1,22 @@
-modLoader="javafml" #mandatory
+modLoader="javafml"
 loaderVersion="[37,)"
 license="MIT"
-[[mods]] #mandatory
-modId="assembly" #mandatory
-version="1.0.0" #mandatory
-displayName="Assembly" #mandatory
-logoFile= "icon.png" #optional
-authors="Evoslab" #optional
+[[mods]]
+modId="assembly"
+version="1.0.0"
+displayName="Assembly"
+logoFile= "icon.png"
+authors="Evoslab"
 description='''
 Expands on 1.17 Blocks!
 '''
 
-[[dependencies.assembly]] #optional
-    modId="forge" #mandatory
-    mandatory=true #mandatory
-    versionRange="[37,)" #mandatory
+[[dependencies.assembly]]
+    modId="forge"
+    mandatory=true
+    versionRange="[37,)"
     ordering="NONE"
     side="BOTH"
-
 [[dependencies.assembly]]
     modId="minecraft"
     mandatory=true
