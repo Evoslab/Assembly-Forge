@@ -42,14 +42,13 @@ public class AssemblyBlocks {
 	public static final RegistryObject<Block> POLISHED_DRIPSTONE_SLAB = registerBlock("polished_dripstone_slab", () -> new SlabBlock(Properties.DRIPSTONE), CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Block> POLISHED_DRIPSTONE_STAIRS = registerBlock("polished_dripstone_stairs", () -> new StairBlock(POLISHED_DRIPSTONE.get()::defaultBlockState, Block.Properties.copy(AMETHYST_BRICKS.get())), CreativeModeTab.TAB_BUILDING_BLOCKS);
 	
-	public static final RegistryObject<Block> CRYING_OBSIDIAN_TILES = registerBlock("crying_obsidian_tiles", () -> new CryingObsidianBlock(Block.Properties.copy(Blocks.CRYING_OBSIDIAN)), CreativeModeTab.TAB_DECORATIONS);
-	public static final RegistryObject<Block> CHISELED_OBSIDIAN = registerBlock("chiseled_obsidian", () -> new Block(Block.Properties.copy(Blocks.OBSIDIAN)), CreativeModeTab.TAB_DECORATIONS);
-	public static final RegistryObject<Block> OBSIDIAN_BRICKS = registerBlock("obsidian_bricks", () -> new Block(Block.Properties.copy(Blocks.OBSIDIAN)), CreativeModeTab.TAB_DECORATIONS);
-	public static final RegistryObject<Block> OBSIDIAN_PILLAR = registerBlock("obsidian_pillar", () -> new RotatedPillarBlock(Block.Properties.copy(Blocks.OBSIDIAN)), CreativeModeTab.TAB_DECORATIONS);
-	public static final RegistryObject<Block> OBSIDIAN_TILES = registerBlock("obsidian_tiles", () -> new Block(Block.Properties.copy(Blocks.OBSIDIAN)), CreativeModeTab.TAB_DECORATIONS);
+	public static final RegistryObject<Block> CRYING_OBSIDIAN_TILES = registerBlock("crying_obsidian_tiles", () -> new CryingObsidianBlock(Block.Properties.copy(Blocks.CRYING_OBSIDIAN).requiresCorrectToolForDrops()), CreativeModeTab.TAB_DECORATIONS);
+	public static final RegistryObject<Block> CHISELED_OBSIDIAN = registerBlock("chiseled_obsidian", () -> new Block(Block.Properties.copy(Blocks.OBSIDIAN).requiresCorrectToolForDrops()), CreativeModeTab.TAB_DECORATIONS);
+	public static final RegistryObject<Block> OBSIDIAN_BRICKS = registerBlock("obsidian_bricks", () -> new Block(Block.Properties.copy(Blocks.OBSIDIAN).requiresCorrectToolForDrops()), CreativeModeTab.TAB_DECORATIONS);
+	public static final RegistryObject<Block> OBSIDIAN_PILLAR = registerBlock("obsidian_pillar", () -> new RotatedPillarBlock(Block.Properties.copy(Blocks.OBSIDIAN).requiresCorrectToolForDrops()), CreativeModeTab.TAB_DECORATIONS);
+	public static final RegistryObject<Block> OBSIDIAN_TILES = registerBlock("obsidian_tiles", () -> new Block(Block.Properties.copy(Blocks.OBSIDIAN).requiresCorrectToolForDrops()), CreativeModeTab.TAB_DECORATIONS);
 	public static final RegistryObject<Block> POLISHED_OBSIDIAN = registerBlock("polished_obsidian", () -> new Block(Block.Properties.copy(Blocks.OBSIDIAN).requiresCorrectToolForDrops()), CreativeModeTab.TAB_DECORATIONS);
 
-	
 	public static final RegistryObject<Block> DIRT_BRICKS = registerBlock("dirt_bricks", () -> new Block(Properties.DIRT), CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Block> DIRT_BRICK_SLAB = registerBlock("dirt_brick_slab", () -> new SlabBlock(Properties.DIRT), CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Block> DIRT_BRICK_STAIRS = registerBlock("dirt_brick_stairs", () -> new StairBlock(DIRT_BRICKS.get()::defaultBlockState, Properties.DIRT), CreativeModeTab.TAB_BUILDING_BLOCKS);

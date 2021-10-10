@@ -6,6 +6,7 @@ modId="assembly"
 version="1.0.0"
 displayName="Assembly"
 logoFile= "icon.png"
+credits="Uraneptus for helping me with the tags"
 authors="Evoslab"
 description='''
 Expands on 1.17 Blocks!
