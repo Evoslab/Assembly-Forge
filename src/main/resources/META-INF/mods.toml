@@ -24,3 +24,10 @@ Expands on 1.17 Blocks!
     versionRange="[1.17.1,1.18)"
     ordering="NONE"
     side="BOTH"
+[[dependencies.assembly]]
+    modId="differentiate"
+    mandatory=true
+    versionRange="[0.3.2,)"
+    versionRange="[0.5.3,)"
+    ordering="AFTER"
+    side="BOTH"
