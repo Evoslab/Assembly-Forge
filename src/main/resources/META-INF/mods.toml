@@ -27,7 +27,9 @@ Expands on 1.17 Blocks!
 [[dependencies.assembly]]
     modId="differentiate"
     mandatory=true
-    versionRange="[0.3.2,)"
     versionRange="[0.5.3,)"
     ordering="AFTER"
     side="BOTH"
+
+[modproperties.assembly]
+    catalogueImageIcon= "icon.png"

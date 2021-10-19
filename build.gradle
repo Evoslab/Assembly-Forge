@@ -79,11 +79,12 @@ repositories {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.17.1-37.0.84'
+    minecraft 'net.minecraftforge:forge:1.17.1-37.0.97'
 
     implementation fg.deobf("curse.maven:differentiate-450748:${differentiate_id}")
     //runtimeOnly fg.deobf("curse.maven:autoreglib-250363:3128555") not 1.17
     //runtimeOnly fg.deobf("curse.maven:quark-243121:3221260") not 1.17
+    runtimeOnly fg.deobf("curse.maven:catalogue-459701:3399552")
 }
 
 jar {
