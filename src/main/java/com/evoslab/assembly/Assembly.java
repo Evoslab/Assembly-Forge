@@ -1,6 +1,7 @@
 package com.evoslab.assembly;
 
 import com.evoslab.assembly.core.registry.AssemblyBlocks;
+import com.evoslab.assembly.core.registry.AssemblyFeatures;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -17,13 +18,15 @@ public class Assembly {
 
     public Assembly() {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
-
         eventBus.addListener(this::doCommonStuff);
         eventBus.addListener(this::doClientStuff);
 
+
+        AssemblyFeatures.FEATURES.register(eventBus);
         AssemblyBlocks.BLOCKS.register(eventBus);
         AssemblyBlocks.ITEMS.register(eventBus);
 
+        MinecraftForge.EVENT_BUS.addListener(AssemblyFeatures.ConfiguredFeatures::onBiomeLoad);
         MinecraftForge.EVENT_BUS.register(this);
 
     }
@@ -33,6 +36,7 @@ public class Assembly {
     }
 
     private void doCommonStuff(final FMLCommonSetupEvent event) {
+        AssemblyFeatures.ConfiguredFeatures.registerFeatures();
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {
