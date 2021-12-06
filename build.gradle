@@ -31,6 +31,9 @@ minecraft {
 
             property 'forge.logging.console.level', 'debug'
 
+            property "mixin.env.remapRefMap", "true"
+            property "mixin.env.refMapRemappingFile", "${projectDir}/build/createSrgToMcp/output.srg"
+
             mods {
                 assembly {
                     source sourceSets.main
@@ -45,6 +48,9 @@ minecraft {
 
             property 'forge.logging.console.level', 'debug'
 
+            property "mixin.env.remapRefMap", "true"
+            property "mixin.env.refMapRemappingFile", "${projectDir}/build/createSrgToMcp/output.srg"
+
             mods {
                 assembly {
                     source sourceSets.main
@@ -58,6 +64,9 @@ minecraft {
             property 'forge.logging.markers', 'REGISTRIES'
 
             property 'forge.logging.console.level', 'debug'
+
+            property "mixin.env.remapRefMap", "true"
+            property "mixin.env.refMapRemappingFile", "${projectDir}/build/createSrgToMcp/output.srg"
 
             args '--mod', 'assembly', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
 
@@ -76,12 +85,16 @@ repositories {
     maven {
         url = "https://www.cursemaven.com"
     }
+    maven {
+        url = "https://maven.jaackson.me"
+    }
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.17.1-37.0.97'
+    minecraft 'net.minecraftforge:forge:1.17.1-37.0.112'
 
-    implementation fg.deobf("curse.maven:differentiate-450748:${differentiate_id}")
+    implementation fg.deobf("com.teamabnormals:blueprint:1.17.1-4.1.1")
+
     //runtimeOnly fg.deobf("curse.maven:autoreglib-250363:3128555") not 1.17
     //runtimeOnly fg.deobf("curse.maven:quark-243121:3221260") not 1.17
     runtimeOnly fg.deobf("curse.maven:catalogue-459701:3399552")

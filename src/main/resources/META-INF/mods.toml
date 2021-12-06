@@ -25,11 +25,11 @@ Expands on 1.17 Blocks!
     ordering="NONE"
     side="BOTH"
 [[dependencies.assembly]]
-    modId="differentiate"
-    mandatory=true
-    versionRange="[0.5.3,)"
-    ordering="AFTER"
-    side="BOTH"
+    modId = "blueprint"
+    mandatory = true
+    versionRange = "[4.0.1,)"
+    ordering = "BEFORE"
+    side = "BOTH"
 
 [modproperties.assembly]
     catalogueImageIcon= "icon.png"

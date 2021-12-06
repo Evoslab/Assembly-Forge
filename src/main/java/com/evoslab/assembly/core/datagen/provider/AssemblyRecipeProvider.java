@@ -20,11 +20,11 @@ public class AssemblyRecipeProvider extends RecipeProvider {
     @Override
     protected void buildCraftingRecipes(Consumer<FinishedRecipe> consumer) {
 
-        this.shapedRecipeWithCriterion(AssemblyBlocks.DIRT_BRICKS.get(), Blocks.REDSTONE_LAMP, 4)
-                .pattern("###")
-                .pattern("###")
-                .define('#', Blocks.REDSTONE_LAMP)
-                .save(consumer);
+//        this.shapedRecipeWithCriterion(AssemblyBlocks.DIRT_BRICKS.get(), Blocks.REDSTONE_LAMP, 4)
+//                .pattern("###")
+//                .pattern("###")
+//                .define('#', Blocks.REDSTONE_LAMP)
+//                .save(consumer);
     }
 
     private ShapedRecipeBuilder shapedRecipeWithCriterion(ItemLike result, ItemLike criterionItem, int count) {

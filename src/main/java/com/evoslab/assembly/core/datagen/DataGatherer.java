@@ -2,6 +2,7 @@ package com.evoslab.assembly.core.datagen;
 
 import com.evoslab.assembly.Assembly;
 import com.evoslab.assembly.core.datagen.provider.AssemblyBlockStateProvider;
+import com.evoslab.assembly.core.datagen.provider.AssemblyItemModelProvider;
 import com.evoslab.assembly.core.datagen.provider.AssemblyLangProvider;
 import com.evoslab.assembly.core.datagen.provider.AssemblyRecipeProvider;
 import net.minecraft.data.DataGenerator;
@@ -23,6 +24,7 @@ public class DataGatherer {
         }
         if (event.includeClient()) {
             dataGen.addProvider(new AssemblyBlockStateProvider(dataGen, fileHelper));
+            dataGen.addProvider(new AssemblyItemModelProvider(dataGen, fileHelper));
             dataGen.addProvider(new AssemblyLangProvider(dataGen));
         }
     }

@@ -1,6 +1,7 @@
 package com.evoslab.assembly;
 
-import com.evoslab.assembly.core.registry.AssemblyBlocks;
+import com.teamabnormals.blueprint.core.util.registry.RegistryHelper;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -10,10 +11,11 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLLoadCompleteEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
-@Mod("assembly")
-@Mod.EventBusSubscriber(modid = "assembly", bus = Mod.EventBusSubscriber.Bus.MOD)
+@Mod(Assembly.MOD_ID)
+@Mod.EventBusSubscriber(modid = Assembly.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class Assembly {
     public static final String MOD_ID = "assembly";
+    public static final RegistryHelper REGISTRY_HELPER = new RegistryHelper(MOD_ID);
 
     public Assembly() {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
@@ -21,11 +23,11 @@ public class Assembly {
         eventBus.addListener(this::doCommonStuff);
         eventBus.addListener(this::doClientStuff);
 
-        AssemblyBlocks.BLOCKS.register(eventBus);
-        AssemblyBlocks.ITEMS.register(eventBus);
-
         MinecraftForge.EVENT_BUS.register(this);
+    }
 
+    public static ResourceLocation id(String id){
+        return new ResourceLocation(Assembly.MOD_ID, id);
     }
 
     @SubscribeEvent
