@@ -2,13 +2,12 @@ package com.evoslab.assembly.core.datagen.provider;
 
 import com.evoslab.assembly.Assembly;
 import com.evoslab.assembly.core.registry.AssemblyBlocks;
-import com.teamabnormals.blueprint.common.block.VerticalSlabBlock;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.fmllegacy.RegistryObject;
+import net.minecraftforge.registries.RegistryObject;
 
 import java.util.Objects;
 
