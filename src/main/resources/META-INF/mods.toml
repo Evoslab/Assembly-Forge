@@ -21,7 +21,7 @@ Expands on 1.18.1 Blocks!
 [[dependencies.assembly]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.18.1)"
+    versionRange="[1.18.1,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.assembly]]
