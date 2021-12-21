@@ -20,6 +20,8 @@ public class Assembly {
     public Assembly() {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        REGISTRY_HELPER.register(eventBus);
+
         eventBus.addListener(this::doCommonStuff);
         eventBus.addListener(this::doClientStuff);
 
