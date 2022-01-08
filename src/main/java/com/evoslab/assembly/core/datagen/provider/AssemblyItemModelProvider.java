@@ -50,12 +50,12 @@ public class AssemblyItemModelProvider extends ItemModelProvider {
         this.createSimpleBlockItem(AssemblyBlocks.DIRT_BRICKS.get().getRegistryName().getPath());
         this.createSimpleBlockItem(AssemblyBlocks.DIRT_BRICK_SLAB.get().getRegistryName().getPath());
         this.createSimpleBlockItem(AssemblyBlocks.DIRT_BRICK_STAIRS.get().getRegistryName().getPath());
-        this.createSimpleBlockItem(AssemblyBlocks.DIRT_BRICK_VERTICAL_SLAB.get().getRegistryName().getPath());
+//        this.createSimpleBlockItem(AssemblyBlocks.DIRT_BRICK_VERTICAL_SLAB.get().getRegistryName().getPath());
 
         this.createSimpleBlockItem(AssemblyBlocks.MOSSY_DIRT_BRICKS.get().getRegistryName().getPath());
         this.createSimpleBlockItem(AssemblyBlocks.MOSSY_DIRT_BRICK_SLAB.get().getRegistryName().getPath());
         this.createSimpleBlockItem(AssemblyBlocks.MOSSY_DIRT_BRICK_STAIRS.get().getRegistryName().getPath());
-        this.createSimpleBlockItem(AssemblyBlocks.MOSSY_DIRT_BRICK_VERTICAL_SLAB.get().getRegistryName().getPath());
+//        this.createSimpleBlockItem(AssemblyBlocks.MOSSY_DIRT_BRICK_VERTICAL_SLAB.get().getRegistryName().getPath());
 
         this.createSimpleBlockItem(AssemblyBlocks.DIRT_TILES.get().getRegistryName().getPath());
         this.createSimpleBlockItem(AssemblyBlocks.CHISELED_DIRT.get().getRegistryName().getPath());
@@ -67,6 +67,11 @@ public class AssemblyItemModelProvider extends ItemModelProvider {
         this.createSimpleBlockItem(AssemblyBlocks.BASALT_TILES.get().getRegistryName().getPath());
         this.createSimpleBlockItem(AssemblyBlocks.BASALT_TILE_SLAB.get().getRegistryName().getPath());
         this.createSimpleBlockItem(AssemblyBlocks.BASALT_TILE_STAIRS.get().getRegistryName().getPath());
+
+        this.createSimpleBlockItem(AssemblyBlocks.WAX_BLOCK.get().getRegistryName().getPath());
+        this.createSimpleBlockItem(AssemblyBlocks.WAX_BRICKS.get().getRegistryName().getPath());
+        this.createSimpleBlockItem(AssemblyBlocks.POLISHED_WAX.get().getRegistryName().getPath());
+        this.createSimpleBlockItem(AssemblyBlocks.CARVED_WAX.get().getRegistryName().getPath());
     }
 
     private void createSimpleBlockItem(String name) {

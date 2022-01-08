@@ -50,13 +50,13 @@ public class AssemblyBlocks {
 	public static final RegistryObject<Block> DIRT_BRICK_SLAB = HELPER.createBlock("dirt_brick_slab", () -> new SlabBlock(Properties.DIRT), CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Block> DIRT_BRICK_STAIRS = HELPER.createBlock("dirt_brick_stairs", () -> new StairBlock(DIRT_BRICKS.get()::defaultBlockState, Properties.DIRT), CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Block> DIRT_BRICK_WALL = HELPER.createBlock("dirt_brick_wall", () -> new WallBlock(Properties.DIRT), CreativeModeTab.TAB_DECORATIONS);
-	public static final RegistryObject<Block> DIRT_BRICK_VERTICAL_SLAB = HELPER.createCompatBlock("quark", "dirt_vertical_slab", () -> new VerticalSlabBlock(Properties.DIRT), CreativeModeTab.TAB_BUILDING_BLOCKS);
+	//public static final RegistryObject<Block> DIRT_BRICK_VERTICAL_SLAB = HELPER.createCompatBlock("quark", "dirt_vertical_slab", () -> new VerticalSlabBlock(Properties.DIRT), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
 	public static final RegistryObject<Block> MOSSY_DIRT_BRICKS = HELPER.createBlock("mossy_dirt_bricks", () -> new Block(Properties.DIRT), CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Block> MOSSY_DIRT_BRICK_SLAB = HELPER.createBlock("mossy_dirt_brick_slab", () -> new SlabBlock(Properties.DIRT), CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Block> MOSSY_DIRT_BRICK_STAIRS = HELPER.createBlock("mossy_dirt_brick_stairs", () -> new StairBlock(DIRT_BRICKS.get()::defaultBlockState, Properties.DIRT), CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Block> MOSSY_DIRT_BRICK_WALL = HELPER.createBlock("mossy_dirt_brick_wall", () -> new WallBlock(Properties.DIRT), CreativeModeTab.TAB_DECORATIONS);
-	public static final RegistryObject<Block> MOSSY_DIRT_BRICK_VERTICAL_SLAB = HELPER.createCompatBlock("quark", "mossy_dirt_vertical_slab", () -> new VerticalSlabBlock(Properties.DIRT), CreativeModeTab.TAB_BUILDING_BLOCKS);
+	//public static final RegistryObject<Block> MOSSY_DIRT_BRICK_VERTICAL_SLAB = HELPER.createCompatBlock("quark", "mossy_dirt_vertical_slab", () -> new VerticalSlabBlock(Properties.DIRT), CreativeModeTab.TAB_BUILDING_BLOCKS);
 	
 	public static final RegistryObject<Block> DIRT_TILES = HELPER.createBlock("dirt_tiles", () -> new Block(Properties.DIRT), CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Block> CHISELED_DIRT = HELPER.createBlock("chiseled_dirt", () -> new Block(Properties.DIRT), CreativeModeTab.TAB_BUILDING_BLOCKS);
@@ -70,9 +70,14 @@ public class AssemblyBlocks {
 	public static final RegistryObject<Block> BASALT_TILE_STAIRS = HELPER.createBlock("basalt_tile_stairs", () -> new StairBlock(BASALT_TILES.get()::defaultBlockState, Block.Properties.copy(Blocks.POLISHED_BASALT)), CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Block> BASALT_TILE_WALL = HELPER.createBlock("basalt_tile_wall", () -> new WallBlock(Block.Properties.copy(Blocks.POLISHED_BASALT)), CreativeModeTab.TAB_DECORATIONS);
 
+	public static final RegistryObject<Block> WAX_BLOCK = HELPER.createBlock("wax_block", () -> new Block(Block.Properties.copy(Blocks.STONE)), CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Block> WAX_BRICKS = HELPER.createBlock("wax_bricks", () -> new Block(Block.Properties.copy(Blocks.STONE)), CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Block> POLISHED_WAX = HELPER.createBlock("polished_wax", () -> new Block(Block.Properties.copy(Blocks.STONE)), CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Block> CARVED_WAX = HELPER.createBlock("carved_wax", () -> new Block(Block.Properties.copy(Blocks.STONE)), CreativeModeTab.TAB_BUILDING_BLOCKS);
+
 	public static class Properties {
 		public static final Block.Properties DIRT = Block.Properties.copy(Blocks.DIRT).strength(2.0F, 6.0F);
-		public static final Block.Properties DRIPSTONE = Block.Properties.copy(Blocks.DRIPSTONE_BLOCK).sound(SoundType.DRIPSTONE_BLOCK);
+		public static final Block.Properties DRIPSTONE = Block.Properties.copy(Blocks.DRIPSTONE_BLOCK).sound(SoundType.DRIPSTONE_BLOCK).requiresCorrectToolForDrops();
 		public static final Block.Properties AMETHYST = Block.Properties.of(Material.AMETHYST, MaterialColor.COLOR_PURPLE).strength(1.5F).sound(SoundType.AMETHYST).requiresCorrectToolForDrops();
 	}
 }

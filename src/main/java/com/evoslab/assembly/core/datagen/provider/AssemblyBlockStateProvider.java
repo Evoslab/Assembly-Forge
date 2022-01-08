@@ -53,13 +53,11 @@ public class AssemblyBlockStateProvider extends BlockStateProvider {
         this.slabBlock((SlabBlock) AssemblyBlocks.DIRT_BRICK_SLAB.get(), getTexture(AssemblyBlocks.DIRT_BRICKS), getTexture(AssemblyBlocks.DIRT_BRICKS));
         this.stairsBlock((StairBlock) AssemblyBlocks.DIRT_BRICK_STAIRS.get(), getTexture(AssemblyBlocks.DIRT_BRICKS));
         this.simpleWallBlock((WallBlock) AssemblyBlocks.DIRT_BRICK_WALL.get(), getTexture(AssemblyBlocks.DIRT_BRICKS));
-        //this.verticalSlabBlock((VerticalSlabBlock)AssemblyBlocks.DIRT_BRICK_VERTICAL_SLAB.get(), getTexture(AssemblyBlocks.DIRT_BRICKS), getTexture(AssemblyBlocks.DIRT_BRICKS));
 
         this.simpleBlock(AssemblyBlocks.MOSSY_DIRT_BRICKS.get());
         this.slabBlock((SlabBlock) AssemblyBlocks.MOSSY_DIRT_BRICK_SLAB.get(), getTexture(AssemblyBlocks.MOSSY_DIRT_BRICKS), getTexture(AssemblyBlocks.MOSSY_DIRT_BRICKS));
         this.stairsBlock((StairBlock) AssemblyBlocks.MOSSY_DIRT_BRICK_STAIRS.get(), getTexture(AssemblyBlocks.MOSSY_DIRT_BRICKS));
         this.simpleWallBlock((WallBlock) AssemblyBlocks.MOSSY_DIRT_BRICK_WALL.get(), getTexture(AssemblyBlocks.MOSSY_DIRT_BRICKS));
-        //this.verticalSlabBlock((VerticalSlabBlock)AssemblyBlocks.MOSSY_DIRT_BRICK_VERTICAL_SLAB.get(), getTexture(AssemblyBlocks.MOSSY_DIRT_BRICKS), getTexture(AssemblyBlocks.MOSSY_DIRT_BRICKS));
 
         this.simpleBlock(AssemblyBlocks.DIRT_TILES.get());
         this.simpleBlock(AssemblyBlocks.CHISELED_DIRT.get());
@@ -72,6 +70,11 @@ public class AssemblyBlockStateProvider extends BlockStateProvider {
         this.slabBlock((SlabBlock) AssemblyBlocks.BASALT_TILE_SLAB.get(), getTexture(AssemblyBlocks.BASALT_TILES), getTexture(AssemblyBlocks.BASALT_TILES));
         this.stairsBlock((StairBlock) AssemblyBlocks.BASALT_TILE_STAIRS.get(), getTexture(AssemblyBlocks.BASALT_TILES));
         this.simpleWallBlock((WallBlock) AssemblyBlocks.BASALT_TILE_WALL.get(), getTexture(AssemblyBlocks.BASALT_TILES));
+
+        this.simpleBlock(AssemblyBlocks.WAX_BLOCK.get());
+        this.simpleBlock(AssemblyBlocks.WAX_BRICKS.get());
+        this.simpleBlock(AssemblyBlocks.POLISHED_WAX.get());
+        this.simpleBlock(AssemblyBlocks.CARVED_WAX.get());
     }
 
     public String getBlockName(RegistryObject<Block> ro) {

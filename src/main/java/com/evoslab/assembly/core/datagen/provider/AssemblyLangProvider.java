@@ -47,13 +47,13 @@ public class AssemblyLangProvider extends LanguageProvider {
         this.addBlock(AssemblyBlocks.DIRT_BRICK_SLAB, "Dirt Brick Slab");
         this.addBlock(AssemblyBlocks.DIRT_BRICK_STAIRS, "Dirt Brick Stairs");
         this.addBlock(AssemblyBlocks.DIRT_BRICK_WALL, "Dirt Brick Wall");
-        this.addBlock(AssemblyBlocks.DIRT_BRICK_VERTICAL_SLAB, "Dirt Brick Vertical Slab");
+        //this.addBlock(AssemblyBlocks.DIRT_BRICK_VERTICAL_SLAB, "Dirt Brick Vertical Slab");
 
         this.addBlock(AssemblyBlocks.MOSSY_DIRT_BRICKS, "Mossy Dirt Bricks");
         this.addBlock(AssemblyBlocks.MOSSY_DIRT_BRICK_SLAB, "Mossy Dirt Brick Slab");
         this.addBlock(AssemblyBlocks.MOSSY_DIRT_BRICK_STAIRS, "Mossy Dirt Brick Stairs");
         this.addBlock(AssemblyBlocks.MOSSY_DIRT_BRICK_WALL, "Mossy Dirt Brick Wall");
-        this.addBlock(AssemblyBlocks.MOSSY_DIRT_BRICK_VERTICAL_SLAB, "Mossy Dirt Brick Vertical Slab");
+        //this.addBlock(AssemblyBlocks.MOSSY_DIRT_BRICK_VERTICAL_SLAB, "Mossy Dirt Brick Vertical Slab");
 
         this.addBlock(AssemblyBlocks.DIRT_TILES, "Dirt Tiles");
         this.addBlock(AssemblyBlocks.CHISELED_DIRT, "Chiseled Dirt");
@@ -66,5 +66,10 @@ public class AssemblyLangProvider extends LanguageProvider {
         this.addBlock(AssemblyBlocks.BASALT_TILE_SLAB, "Basalt Tile Slab");
         this.addBlock(AssemblyBlocks.BASALT_TILE_STAIRS, "Basalt Tile Stairs");
         this.addBlock(AssemblyBlocks.BASALT_TILE_WALL, "Basalt Tile Wall");
+
+        this.addBlock(AssemblyBlocks.WAX_BLOCK, "Wax Block");
+        this.addBlock(AssemblyBlocks.WAX_BRICKS, "Wax Bricks");
+        this.addBlock(AssemblyBlocks.POLISHED_WAX, "Polished Wax");
+        this.addBlock(AssemblyBlocks.CARVED_WAX, "Carved Wax");
     }
 }

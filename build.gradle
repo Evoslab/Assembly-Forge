@@ -95,8 +95,8 @@ dependencies {
 
     implementation fg.deobf("com.teamabnormals:blueprint:1.18.1-5.0.0")
 
-    //runtimeOnly fg.deobf("curse.maven:autoreglib-250363:3128555") not 1.17
-    //runtimeOnly fg.deobf("curse.maven:quark-243121:3221260") not 1.17
+//    runtimeOnly fg.deobf("curse.maven:autoreglib-250363:3575622")
+//    runtimeOnly fg.deobf("curse.maven:quark-243121:3576128")
     runtimeOnly fg.deobf("curse.maven:catalogue-459701:3559402")
 }
 
